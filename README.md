@@ -65,15 +65,30 @@ To efficiently handle long audio streams, the system **splits audio into smaller
 ## ⚙️ Installation and Setup
 
 ### Step 1: Clone the Repository
-
+```bash
 git clone <repository-url>
 cd multilingual-speech-translation
-
-
-### Step 2: Create Virtual Environment
+```
+### Step 2: Create Virtual Environment (Recommended)
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux / Mac
 venv\Scripts\activate      # Windows
 
+```
+### Step 3: Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 🔹 Step 4: Install FFmpeg
+```bash
+ffmpeg -version
+```
+### 🔹 Step 5: Download Whisper Model
+```bash
+./whisper
+```
 
-
+### 🔹 Step 6: Run the Application
+```
+python app.py
